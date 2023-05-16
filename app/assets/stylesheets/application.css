@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+headeer, h1, nav, .list-comment {
+  font-family: 'kaushan', cursive, sans-serif;
+}
+
 header {
   width: 90%;
   padding: 15px 0;
@@ -29,14 +33,14 @@ header {
 }
 
 header .headline {
-  font_size: 32px;
+  font-size: 32px;
 }
 
 nav {
   width: 880px;
   margin: 0 auto;
   border-top: solid 0.7px #000000;
-  border-bottom: solid; 0.7px #000000;
+  border-bottom: solid 0.7px #000000;
 }
 
 .nav-list {
@@ -52,12 +56,12 @@ nav {
 }
 
 main {
-  width: 800px;
+  width: 880px;
   margin: 0 auto;
 }
 
 .list-wrap {
-  desplay: flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -65,8 +69,29 @@ main {
   width: 200px;
   height: 250px;
   margin: 10px;
+  position: relative;
 }
 
 .list-comment {
   width: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.list-body {
+  display: block;
+  color: gray;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.list-title {
+  display: block;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
